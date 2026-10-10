@@ -284,3 +284,12 @@ h1 em{color:var(--orange);font-style:normal}
 @media(max-width:1050px){.blog-teaser-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-page-grid{grid-template-columns:1fr}.contact-location-card{max-width:none}.contact-extra{grid-template-columns:1fr;gap:20px}.contact-extra-actions{max-width:480px}}
 @media(max-width:850px){.footer-main{flex-wrap:wrap}.footer-quick-links{width:100%;order:3}}
 @media(max-width:600px){.contact-page-hero,.blog-listing-hero{padding:31px 0}.contact-page-hero h1,.blog-listing-hero h1{font-size:36px}.contact-page-hero p:last-child,.blog-listing-hero p:last-child{font-size:13px}.contact-page-section{padding:35px 0}.contact-info-list{grid-template-columns:1fr}.contact-info-card{padding:17px}.contact-location-card{padding:19px}.contact-extra h2{font-size:27px}.blog-teaser-section{padding:40px 0}.blog-teaser-grid{grid-template-columns:1fr;gap:9px}.blog-teaser{padding:16px}.blog-all-link{text-align:left}.blog-listing-content{padding:28px 0 40px}.blog-listing-grid{grid-template-columns:1fr;gap:13px}.blog-list-copy{padding:17px}.blog-list-copy h2{font-size:19px}.blog-article-header{padding:22px 0 12px}.blog-article-header h1{font-size:34px}.blog-article-lead{font-size:14px}.blog-feature-image{margin:15px 0 22px}.article-section{margin:24px 0}.article-section p{font-size:13px;line-height:1.9}.article-section h2{font-size:24px}.article-reminder{padding:17px}.footer-quick-links{gap:12px}}
+
+/* Frequently asked service questions, shared across all site sections */
+.service-faq-global{padding:54px 0;background:#f7f8f8;border-top:1px solid #e3e8eb}
+.service-faq-container{max-width:930px}
+.service-faq-global h2{margin:0 0 10px;color:var(--navy);font-size:clamp(27px,3vw,35px);line-height:1.25;letter-spacing:-.03em}
+.service-faq-intro{max-width:700px;margin:0 0 25px;color:#64717a;font-size:14px;line-height:1.8}
+.service-faq-global .eyebrow{margin:0 0 9px}
+.service-faq-global .faq-list{margin-top:20px}
+@media(max-width:600px){.service-faq-global{padding:38px 0}.service-faq-intro{font-size:13px}.service-faq-global h2{font-size:26px}}
