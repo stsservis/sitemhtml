@@ -1,12 +1,14 @@
 (() => {
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('#primary-nav');
+
   if (toggle && nav) {
     toggle.addEventListener('click', () => {
-      const open = nav.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', String(open));
-      toggle.setAttribute('aria-label', open ? 'Menüyü kapat' : 'Menüyü aç');
+      const isOpen = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      toggle.setAttribute('aria-label', isOpen ? 'Menüyü kapat' : 'Menüyü aç');
     });
+
     nav.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => {
         nav.classList.remove('is-open');
@@ -15,6 +17,16 @@
       });
     });
   }
+
+  const floatingContact = document.querySelector('#floating-contact');
+  const floatingClose = document.querySelector('.floating-close');
+
+  if (floatingContact && floatingClose) {
+    floatingClose.addEventListener('click', () => {
+      floatingContact.hidden = true;
+    });
+  }
+
   const year = document.querySelector('#year');
-  if (year) year.textContent = new Date().getFullYear();
+  if (year) year.textContent = String(new Date().getFullYear());
 })();
