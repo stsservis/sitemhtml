@@ -293,3 +293,48 @@ h1 em{color:var(--orange);font-style:normal}
 .service-faq-global .eyebrow{margin:0 0 9px}
 .service-faq-global .faq-list{margin-top:20px}
 @media(max-width:600px){.service-faq-global{padding:38px 0}.service-faq-intro{font-size:13px}.service-faq-global h2{font-size:26px}}
+
+
+/* Hero storefront image: wide composition, clear text area on the left */
+@media (min-width:851px){
+  .hero{
+    min-height:clamp(620px,50vw,780px);
+    align-items:stretch;
+  }
+  .hero-photo{
+    inset:0;
+    width:100%;
+    height:100%;
+  }
+  .hero-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center 38%;
+  }
+  .hero-overlay{
+    background:linear-gradient(90deg,rgba(249,250,249,.34) 0%,rgba(249,250,249,.22) 26%,rgba(249,250,249,.07) 44%,rgba(249,250,249,0) 59%);
+  }
+  .hero-content{
+    padding-right:52%;
+    padding-top:44px;
+    padding-bottom:44px;
+  }
+}
+@media (max-width:850px){
+  .hero-photo{
+    height:auto;
+    aspect-ratio:16 / 9;
+    max-height:none;
+    width:calc(100% - 36px);
+    margin:0 auto 18px;
+    border-radius:12px;
+    overflow:hidden;
+  }
+  .hero-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+  }
+}
