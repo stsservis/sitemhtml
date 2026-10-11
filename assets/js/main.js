@@ -18,15 +18,6 @@
     });
   }
 
-  const floatingContact = document.querySelector('#floating-contact');
-  const floatingClose = document.querySelector('.floating-close');
-
-  if (floatingContact && floatingClose) {
-    floatingClose.addEventListener('click', () => {
-      floatingContact.hidden = true;
-    });
-  }
-
   const year = document.querySelector('#year');
   if (year) year.textContent = String(new Date().getFullYear());
 })();
