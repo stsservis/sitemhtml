@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "bagcilararcelikservisi\\.online"
+        }
+      ],
+      "destination": "https://www.bagcilararcelikservisi.online/:path*",
+      "permanent": true
+    }
+  ]
+}
