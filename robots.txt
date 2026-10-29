@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bagcilararcelikservisi.online/sitemap.xml
+Sitemap: https://www.bagcilararcelikservisi.online/sitemap.xml
